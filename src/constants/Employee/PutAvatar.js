@@ -1,0 +1,3 @@
+export const PUT_AVATAR = "PUT_AVATAR";
+export const PUT_AVATAR_SUCCESS = "PUT_AVATAR_SUCCESS";
+export const PUT_AVATAR_FAILED = "PUT_AVATAR_FAILED";

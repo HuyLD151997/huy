@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#side-bar {
+  width: 250px;
+  min-height: 100vh;
+  background: #edf2f7;
+  color: #1e1e1f;
+}
+
+#side-bar .logo {
+  font-weight: bold;
+  color: #1e1e1f;
+  font-size: 21px;
+  padding: 12px 15px;
+}
+#side-bar ul li a {
+  background: transparent;
+  padding: 7px 15px;
+  color: #1e1e1f;
+  display: block;
+  text-decoration: none;
+}
+#side-bar ul li:hover {
+  background: #ccc;
+}
+#side-bar ul li.dashboard {
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #edf2f7;
+  padding: 10px 15px;
+  color: #1e1e1f;
+}
+
+#admin-wrapper {
+  width: calc(100% - 250px);
+}
+
+#navbar-custom {
+  background-color: #ffffcc;
+  width: 100%;
+}
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+a {
+  color: #1e1e1f;
+}
+
+#logoLogin {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 135px;
+  margin-top: 30px;
+}

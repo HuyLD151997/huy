@@ -1,0 +1,3 @@
+export const GET_CHART = "GET_CHART";
+export const GET_CHART_SUCCESS = "GET_CHART_SUCCESS";
+export const GET_CHART_FAILED = "GET_CHART_FAILED";
