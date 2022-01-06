@@ -54,6 +54,8 @@ const Header = () => {
       const hubConnect = new signalR.HubConnectionBuilder()
         .withUrl("http://api.beclean.store/notificationHub", {
           accessTokenFactory: () => token,
+          skipNegotiation: true,
+          transport: signalR.HttpTransportType.WebSockets,
         })
         .configureLogging(signalR.LogLevel.Information)
         .build();
@@ -76,7 +78,7 @@ const Header = () => {
       });
     }
   }, []);
-
+  ///d
   console.log(hubConnection);
   // const createHubConnection = async () => {
   //   const hubConnection = new HubConnectionBuilder()
