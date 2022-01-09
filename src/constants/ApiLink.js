@@ -129,3 +129,7 @@ export const UPDATE_SETTING = `${BASE_URL}/Setting`;
 export const CHART = `${BASE_URL}/Chart/Booking`;
 
 export const CHART_TRANSACTION = `${BASE_URL}/Chart/Transaction`;
+
+export const NOTIFICATION = `${BASE_URL}/Notification/User`;
+
+export const SEEN = `${BASE_URL}/Notification/Seen`;

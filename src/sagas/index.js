@@ -36,9 +36,11 @@ import { sagas as getSettingSaga } from "./SettingSagas/GetSettingSaga";
 import { sagas as getChartSaga } from "./ChartSagas/GetChartSaga";
 import { sagas as getChartTransactionSaga } from "./ChartSagas/GetChartTransactionSaga";
 import { sagas as searchBookingInWorkingSaga } from "./BookingSagas/SearchBookingInWorkingSaga";
+import { sagas as getNotificationSaga } from "./NotificationSagas/GetNotificationSaga";
 
 const allSaga = [
   ...authenticateSagas,
+  ...getNotificationSaga,
   ...searchBookingInWorkingSaga,
   ...getEmployeesSagas,
   ...searchEmployeeToolSaga,

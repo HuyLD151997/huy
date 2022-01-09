@@ -394,7 +394,8 @@ const CleaningToolPage = (props) => {
                                 style={{
                                   fontSize: "20px",
                                   // margin: "auto",
-                                  //marginTop: "8px",
+                                  //marginTop: "15px",
+                                  marginLeft: "5px",
                                   // position: "absolute",
                                   // bottom: "7px",
                                   // right: "15px",
@@ -554,7 +555,8 @@ const CleaningToolPage = (props) => {
                                 style={{
                                   fontSize: "20px",
                                   // margin: "auto",
-                                  //marginTop: "8px",
+                                  //marginTop: "20px",
+                                  marginLeft: "5px",
                                   // position: "absolute",
                                   // bottom: "7px",
                                   // right: "15px",
@@ -717,7 +719,8 @@ const CleaningToolPage = (props) => {
                               style={{
                                 fontSize: "20px",
                                 // margin: "auto",
-                                //marginTop: "8px",
+                                //marginTop: "10px",
+                                marginLeft: "5px",
                                 // position: "absolute",
                                 // bottom: "7px",
                                 // right: "15px",

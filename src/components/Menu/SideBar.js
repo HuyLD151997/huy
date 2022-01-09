@@ -10,6 +10,7 @@ import {
   FaRegCalendarAlt,
   FaWrench,
   FaListOl,
+  FaCartPlus,
 } from "react-icons/fa";
 const chart = [
   {
@@ -168,7 +169,7 @@ class SideBar extends Component {
             <span
               style={{ fontSize: "20px", marginRight: "5px", color: "white" }}
             >
-              <FaUser />
+              <FaCartPlus />
             </span>
             <span
               data-toggle="collapse"

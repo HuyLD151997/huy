@@ -19,8 +19,7 @@ const ChartPage = (props) => {
     dispatchAction(getChartTransactinonActions.getChartTransaction());
   }, []);
   const { data, dataTransaction } = props;
-  console.log(dataTransaction);
-  console.log(data);
+
   const validationSchema = yup
     .object({
       description: yup.string().required("Tên dịch vụ không được để trống"),
