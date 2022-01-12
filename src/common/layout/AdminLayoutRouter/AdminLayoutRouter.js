@@ -117,7 +117,10 @@ const AdminLayoutRouter = (props) => {
                   >
                     <MenuIcon />
                   </IconButton>
-                  <div style={{ marginLeft: "1050px" }}>
+                  <div
+                    className="justify-content-end"
+                    style={{ width: "100%" }}
+                  >
                     <Header />
                   </div>
                 </Toolbar>

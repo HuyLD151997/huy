@@ -210,7 +210,7 @@ const CoordinatorEmpPage = (props) => {
                         </td>
                         <td className="align-middle">
                           {smallItem.estiamtedMinutes !== null ? (
-                            <span> {smallItem.estiamtedMinutes} giờ</span>
+                            <span> {smallItem.estiamtedMinutes} phút</span>
                           ) : (
                             <span> Chưa có dữ liệu</span>
                           )}
@@ -267,7 +267,11 @@ const CoordinatorEmpPage = (props) => {
                       )}
                       <div className="mt-2">
                         <div>
-                          <span style={{ fontWeight: 500 }}>
+                          <span
+                            style={{
+                              fontWeight: "bold",
+                            }}
+                          >
                             Mã nhân viên:{" "}
                           </span>
                           {itemEmp.employeeCode ? (
@@ -277,7 +281,7 @@ const CoordinatorEmpPage = (props) => {
                           )}
                         </div>
                         <div>
-                          <span style={{ fontWeight: 500 }}>Họ tên: </span>
+                          <span style={{ fontWeight: "bold" }}>Họ tên: </span>
                           {itemEmp.fullname ? (
                             <span>{itemEmp.fullname}</span>
                           ) : (
@@ -285,17 +289,19 @@ const CoordinatorEmpPage = (props) => {
                           )}
                         </div>
                         <div>
-                          <span style={{ fontWeight: 500 }}>Đánh giá: </span>
-                          {itemEmp.avgRating === 0 ? (
+                          <span style={{ fontWeight: "bold" }}>Đánh giá: </span>
+                          {itemEmp.avgRating !== 0 ? (
                             <span>
                               {itemEmp.avgRating} <i class="fa fa-star"></i>
                             </span>
                           ) : (
-                            <span>Chưa có dữ liệu</span>
+                            <span>0</span>
                           )}
                         </div>
                         <div>
-                          <span style={{ fontWeight: 500 }}>Khoảng cách: </span>
+                          <span style={{ fontWeight: "bold" }}>
+                            Khoảng cách:{" "}
+                          </span>
                           {itemEmp.distance ? (
                             <span>{itemEmp.distance} km</span>
                           ) : (
@@ -303,7 +309,7 @@ const CoordinatorEmpPage = (props) => {
                           )}
                         </div>
                         <div>
-                          <span style={{ fontWeight: 500 }}>
+                          <span style={{ fontWeight: "bold" }}>
                             Số lượng đặt lịch:{" "}
                           </span>
                           {itemEmp.numberOfBooking !== 0 ? (
