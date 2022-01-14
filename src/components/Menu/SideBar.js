@@ -36,6 +36,12 @@ const account = [
 
 const booking = [
   {
+    name: "Tất cả",
+    to: "/booking",
+    exact: false,
+    icon: <FaRegCalendarAlt />,
+  },
+  {
     name: "Điều phối",
     to: "/wait-booking",
     exact: false,
@@ -50,12 +56,6 @@ const booking = [
   {
     name: "Đặt lịch đã hoàn thành",
     to: "/booking-done",
-    exact: false,
-    icon: <FaRegCalendarAlt />,
-  },
-  {
-    name: "Đặt lịch",
-    to: "/booking",
     exact: false,
     icon: <FaRegCalendarAlt />,
   },
