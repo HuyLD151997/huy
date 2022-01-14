@@ -437,8 +437,8 @@ const CoordinatorEmpPage = (props) => {
                       <img
                         src={`http://api.beclean.store/api/Account/Avatar/${itemEmp.hasAvatar}`}
                         style={{
-                          width: "100px",
-                          height: "100px",
+                          width: "150px",
+                          height: "150px",
                           display: "block",
                           marginLeft: "10px",
                           marginTop: "10px",
@@ -489,6 +489,16 @@ const CoordinatorEmpPage = (props) => {
                           <span>
                             {itemEmp.avgRating} <i class="fa fa-star"></i>
                           </span>
+                        ) : (
+                          <span>Chưa có dữ liệu</span>
+                        )}
+                      </div>
+                      <div>
+                        <span style={{ fontWeight: "bold" }}>
+                          Điểm credit:{" "}
+                        </span>
+                        {itemEmp.employeeCredit !== 0 ? (
+                          <span>{itemEmp.employeeCredit}</span>
                         ) : (
                           <span>Chưa có dữ liệu</span>
                         )}
