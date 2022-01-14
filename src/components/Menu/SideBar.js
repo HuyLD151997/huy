@@ -54,7 +54,7 @@ const booking = [
     icon: <FaWrench />,
   },
   {
-    name: "Đặt lịch đã hoàn thành",
+    name: "Đã hoàn thành",
     to: "/booking-done",
     exact: false,
     icon: <FaRegCalendarAlt />,
