@@ -38,10 +38,12 @@ import getChartsReducer from "./ChartReducer/GetChartReducer";
 import getChartTransactionReducer from "./ChartReducer/GetChartTransactionReducer";
 import searchBookingInWorkingReducer from "./BookingsReducer/SearchBookingInWorkingReducer";
 import getNotificationReducer from "./NotificationReducer/GetNotificationReducer";
+import searchEmpBookingReducer from "./BookingsReducer/SearchEmpBookingReducer";
 
 const rootReducers = combineReducers({
   services,
   auth: authenticateReducer,
+  searchEmpBooking: searchEmpBookingReducer,
   searchBookingInWorking: searchBookingInWorkingReducer,
   getNotification: getNotificationReducer,
   getEmployees: getEmployeesReducer,
