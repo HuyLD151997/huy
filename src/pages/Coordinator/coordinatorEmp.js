@@ -8,18 +8,34 @@ import { coordinatorEmpApi } from "../../apis/Booking/CoordinatorEmp";
 import Swal from "sweetalert2";
 import * as searchEmpBookingActions from "../../actions/Booking/SearchEmpBooking";
 import { searchEmpBookingApi } from "../../apis/Booking/SearchEmpBooking";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm } from "react-hook-form";
 
 const CoordinatorEmpPage = (props) => {
   const { id } = useParams();
   const { data, dataSearch, loading } = props;
 
-  const [search, setSearch] = useState(5);
+  const [search, setSearch] = useState("");
   const [searchResult, setSearchResult] = useState(null);
   console.log(id);
   const dispatchAction = useDispatch();
   useEffect(() => {
     dispatchAction(getNewBookingDetail.getNewBookingDetail(id));
   }, []);
+
+  const searchAction = () => {
+    if (search <= 0) {
+      Swal.fire({
+        icon: "error",
+        text: "Số phải lớn hơn 0",
+        timer: 2000,
+        showConfirmButton: false,
+      });
+    } else {
+      handleSearch();
+    }
+  };
 
   const handleSearch = () => {
     //console.log(search);
@@ -275,7 +291,7 @@ const CoordinatorEmpPage = (props) => {
                     onChange={(e) => {
                       setSearch(e.target.value);
                     }}
-                    defaultValue={search}
+                    defaultValue={data.distance}
                   />
                   <span
                     style={{
@@ -291,13 +307,15 @@ const CoordinatorEmpPage = (props) => {
                     <button
                       type="button"
                       className="btn btn-outline-secondary"
-                      onClick={handleSearch}
+                      onClick={searchAction}
                     >
                       <i class="fa fa-search"></i>
                     </button>
                   </div>
                 </form>
-                <span>{search <= 0 ? "dữ liệu phải lơn hơn không" : null}</span>
+                {/* <span>
+                  {data.distance <= 0 ? "dữ liệu phải lơn hơn không" : null}
+                </span> */}
               </div>
 
               {searchResult ? (

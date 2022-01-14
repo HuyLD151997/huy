@@ -77,8 +77,13 @@ const Header = (props) => {
   const createNotification = (model) => {
     return NotificationManager.info(
       <div className="mr-3">
-        <h5>{model.title}</h5>
-        <p>{model.description}</p>
+        {model.title ? <h5>{model.title}</h5> : <span>Chưa có dữ liệu</span>}
+
+        {model.description ? (
+          <p>{model.description}</p>
+        ) : (
+          <span>Chưa có dữ liệu</span>
+        )}
       </div>
     );
   };
